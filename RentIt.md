@@ -38,7 +38,7 @@ The renting smart contract will act as an escrow service that will hold certain 
                    |                        ____|         |_________                           |
                    |                       |                        |                          |
                    |                       |                        |                          |
-                   |             __________|________________________|_____________             |                 |            |                                                 |            |
+                   |             __________|________________________|_____________             |            |            |                                                 |            |
                    |   |--------|RentPayment Contract         RentDeposit Contract|-----|      |
                    |   |        |_________________________________________________|     |      |     
                    |   |                                                                |      |
