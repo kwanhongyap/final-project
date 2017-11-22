@@ -31,7 +31,7 @@ The renting smart contract will act as an escrow service that will hold certain 
                   |                                    |                                       |            
                   |                                    |                                       |
                   |                                    |                                       |
-Renter Wallet   ----------------------------------ERC20-contract ---------------------------------  Tenant Wallet
+  Renter Wallet   ----------------------------------ERC20-contract ---------------------------------TenantWallet
                    |                        _______|          |                                |
                    |                       |                  |______                          |
                    |                       |                        |                          |
