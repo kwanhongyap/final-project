@@ -3,8 +3,8 @@
   "abi": [],
   "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582031ddefb766108cdd48563c0a90879e08a7f0d8f7c662940a4f691e81fe7c0a040029",
   "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582031ddefb766108cdd48563c0a90879e08a7f0d8f7c662940a4f691e81fe7c0a040029",
-  "sourceMap": "26:29:4:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:29:4:-;;;;;",
+  "sourceMap": "26:29:5:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:29:5:-;;;;;",
   "source": "pragma solidity ^0.4.15;\n\ncontract Rentpayment {\n    \n}\n",
   "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentpayment.sol",
   "ast": {
@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentpayment.sol",
       "exportedSymbols": {
         "Rentpayment": [
-          95
+          158
         ]
       }
     },
@@ -26,9 +26,9 @@
             ".15"
           ]
         },
-        "id": 94,
+        "id": 157,
         "name": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:5"
       },
       {
         "attributes": {
@@ -42,22 +42,22 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            95
+            158
           ],
           "name": "Rentpayment",
           "nodes": [
             null
           ],
-          "scope": 96
+          "scope": 159
         },
-        "id": 95,
+        "id": 158,
         "name": "ContractDefinition",
-        "src": "26:29:4"
+        "src": "26:29:5"
       }
     ],
-    "id": 96,
+    "id": 159,
     "name": "SourceUnit",
-    "src": "0:56:4"
+    "src": "0:56:5"
   },
   "compiler": {
     "name": "solc",
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:45:54.681Z"
+  "updatedAt": "2017-11-27T04:04:00.658Z"
 }
