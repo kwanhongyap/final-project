@@ -8,7 +8,7 @@ import './Rentpayment.sol';
 import './Rentdeposit.sol';
 
 contract Marketplace {
-    address owner;
+    address public owner;
     Item[] itemlist;
 	Renter rentstruct;
 	Owner ownstruct;

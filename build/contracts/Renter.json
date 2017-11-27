@@ -3,8 +3,8 @@
   "abi": [],
   "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058204fd545b3453c45c4be0f0d67a23f41c9d456119aa9d97db8249b65e5ee7c09e10029",
   "deployedBytecode": "0x6060604052600080fd00a165627a7a723058204fd545b3453c45c4be0f0d67a23f41c9d456119aa9d97db8249b65e5ee7c09e10029",
-  "sourceMap": "26:24:4:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:24:4:-;;;;;",
+  "sourceMap": "26:24:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:24:3:-;;;;;",
   "source": "pragma solidity ^0.4.15;\n\ncontract Renter {\n    \n}\n",
   "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Renter.sol",
   "ast": {
@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Renter.sol",
       "exportedSymbols": {
         "Renter": [
-          96
+          86
         ]
       }
     },
@@ -26,9 +26,9 @@
             ".15"
           ]
         },
-        "id": 95,
+        "id": 85,
         "name": "PragmaDirective",
-        "src": "0:24:4"
+        "src": "0:24:3"
       },
       {
         "attributes": {
@@ -42,22 +42,22 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            96
+            86
           ],
           "name": "Renter",
           "nodes": [
             null
           ],
-          "scope": 97
+          "scope": 87
         },
-        "id": 96,
+        "id": 86,
         "name": "ContractDefinition",
-        "src": "26:24:4"
+        "src": "26:24:3"
       }
     ],
-    "id": 97,
+    "id": 87,
     "name": "SourceUnit",
-    "src": "0:51:4"
+    "src": "0:51:3"
   },
   "compiler": {
     "name": "solc",
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T02:01:46.480Z"
+  "updatedAt": "2017-11-27T02:27:36.176Z"
 }
