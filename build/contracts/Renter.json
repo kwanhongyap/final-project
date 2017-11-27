@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Renter.sol",
       "exportedSymbols": {
         "Renter": [
-          86
+          88
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 85,
+        "id": 87,
         "name": "PragmaDirective",
         "src": "0:24:3"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            86
+            88
           ],
           "name": "Renter",
           "nodes": [
             null
           ],
-          "scope": 87
+          "scope": 89
         },
-        "id": 86,
+        "id": 88,
         "name": "ContractDefinition",
         "src": "26:24:3"
       }
     ],
-    "id": 87,
+    "id": 89,
     "name": "SourceUnit",
     "src": "0:51:3"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:31:08.567Z"
+  "updatedAt": "2017-11-27T03:32:59.394Z"
 }
