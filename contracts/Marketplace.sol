@@ -31,7 +31,7 @@ contract Marketplace {
         //Item[] memory itemlist = new Item[](1);
     }
 
-    function templength() returns (uint templength) {
+    function templength() public returns (uint templength) {
         return templength;
     }
 

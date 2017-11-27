@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Owner.sol",
       "exportedSymbols": {
         "Owner": [
-          86
+          94
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 85,
+        "id": 93,
         "name": "PragmaDirective",
         "src": "0:24:1"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            86
+            94
           ],
           "name": "Owner",
           "nodes": [
             null
           ],
-          "scope": 87
+          "scope": 95
         },
-        "id": 86,
+        "id": 94,
         "name": "ContractDefinition",
         "src": "26:24:1"
       }
     ],
-    "id": 87,
+    "id": 95,
     "name": "SourceUnit",
     "src": "0:56:1"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:34:13.353Z"
+  "updatedAt": "2017-11-27T03:42:55.475Z"
 }

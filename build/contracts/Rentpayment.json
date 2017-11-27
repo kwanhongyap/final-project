@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentpayment.sol",
       "exportedSymbols": {
         "Rentpayment": [
-          95
+          103
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 94,
+        "id": 102,
         "name": "PragmaDirective",
         "src": "0:24:4"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            95
+            103
           ],
           "name": "Rentpayment",
           "nodes": [
             null
           ],
-          "scope": 96
+          "scope": 104
         },
-        "id": 95,
+        "id": 103,
         "name": "ContractDefinition",
         "src": "26:29:4"
       }
     ],
-    "id": 96,
+    "id": 104,
     "name": "SourceUnit",
     "src": "0:56:4"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:34:13.354Z"
+  "updatedAt": "2017-11-27T03:42:55.476Z"
 }
