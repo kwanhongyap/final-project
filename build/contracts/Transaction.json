@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Transaction.sol",
       "exportedSymbols": {
         "Transaction": [
-          97
+          95
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 96,
+        "id": 94,
         "name": "PragmaDirective",
         "src": "0:24:6"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            97
+            95
           ],
           "name": "Transaction",
           "nodes": [
             null
           ],
-          "scope": 98
+          "scope": 96
         },
-        "id": 97,
+        "id": 95,
         "name": "ContractDefinition",
         "src": "26:29:6"
       }
     ],
-    "id": 98,
+    "id": 96,
     "name": "SourceUnit",
     "src": "0:56:6"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:30:32.744Z"
+  "updatedAt": "2017-11-27T03:31:08.567Z"
 }
