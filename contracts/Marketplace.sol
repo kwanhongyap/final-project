@@ -27,7 +27,7 @@ contract Marketplace {
     function Marketplace() {
         //initial constructor
         owner = msg.sender;
-        Item[] memory itemlist = new Item[](1);
+        //Item[] memory itemlist = new Item[](1);
         temp = 0;
     }
 
