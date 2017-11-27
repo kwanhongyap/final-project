@@ -5,7 +5,8 @@ const Marketplace = artifacts.require("./Marketplace.sol");
 
 contract('TestMarketplace', function(accounts) {
 	
-	const owner1 = accounts[0];
+    const owner1 = accounts[0];
+    print(owner1)
 	const owner2 = accounts[1];
 	let marketplace;
 	
