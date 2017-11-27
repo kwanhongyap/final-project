@@ -9,8 +9,9 @@ import './Rentdeposit.sol';
 
 contract Marketplace {
     address public owner;
-    uint public owner2;
+    uint[] public owner2;
     uint public templength;
+    Item public tempitem;
     Item[] public itemlist;
 	Renter rentstruct;
 	Owner ownstruct;
@@ -27,23 +28,24 @@ contract Marketplace {
 
     function Marketplace() {
         //initial constructor
-        owner2 = 1;
+        
+        owner2[owner2.length++] = 1;
         owner = msg.sender;
-        Item[] memory itemlist = new Item[](0);
-        templength = itemlist.length;
+        templength = owner2.length;
     }
 
     function upLoad(bytes32 name, uint price) {
         //owner upload items to marketplace contract
-        address owner = msg.sender;
-        //temp = itemlist.length;
-        Item memory uitem = Item(name, owner, price);
-        itemlist.push(uitem);
+        address itemowner = msg.sender;
+        itemlist.push(Item(name, itemowner, price));
+        templength = itemlist.length;    
     }
 
-    function lookingUp() returns (Item[] itemlist) {
+    
+
+    function lookingUp() returns (uint[]) {
         //potential renter can lookup what is on the marketplace
-        return itemlist;
+        return owner2;
     }
     
 }

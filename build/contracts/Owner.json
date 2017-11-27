@@ -1,0 +1,69 @@
+{
+  "contractName": "Owner",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820fb3e04b9b1680e5a99bc616074c05b88c0958cd54d2173a8b2d33bb68fe6e7530029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820fb3e04b9b1680e5a99bc616074c05b88c0958cd54d2173a8b2d33bb68fe6e7530029",
+  "sourceMap": "26:24:2:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:24:2:-;;;;;",
+  "source": "pragma solidity ^0.4.15;\n\ncontract Owner {\n    \n\n}\n\n\n\n\n\t",
+  "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Owner.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Owner.sol",
+      "exportedSymbols": {
+        "Owner": [
+          158
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 157,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            158
+          ],
+          "name": "Owner",
+          "nodes": [
+            null
+          ],
+          "scope": 159
+        },
+        "id": 158,
+        "name": "ContractDefinition",
+        "src": "26:24:2"
+      }
+    ],
+    "id": 159,
+    "name": "SourceUnit",
+    "src": "0:56:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-11-27T05:29:54.329Z"
+}
