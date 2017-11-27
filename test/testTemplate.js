@@ -1,29 +1,24 @@
 'use strict';
 
-/* Add the dependencies you're testing */
-const Crowdsale = artifacts.require("./Crowdsale.sol");
-// YOUR CODE HERE
+const Marketplace = artifacts.require("./Marketplace.sol");
 
-contract('testTemplate', function(accounts) {
-	/* Define your constant variables and instantiate constantly changing 
-	 * ones
-	 */
-	const args = {};
-	let x, y, z;
-	// YOUR CODE HERE
 
-	/* Do something before every `describe` method */
+contract('TestMarketplace', function(accounts) {
+	
+	const owner1 = accounts[0];
+	const owner2 = accounts[1];
+	let marketplace;
+	
 	beforeEach(async function() {
-		// YOUR CODE HERE
+		let mp = await Marketplace.new({from : owner1});
+		marketplace = mp;
 	});
 
-	/* Group test cases together 
-	 * Make sure to provide descriptive strings for method arguements and
-	 * assert statements
-	 */
-	describe('Your string here', function() {
-		it("your string here", async function() {
-			// YOUR CODE HERE
+	
+	describe('Initialization and Upload', function() {
+		it("Init+Upload", async function() {
+			let contractowner = await marketplace.owner.call();
+			assert.equal(owner1, contractowner.valueOf(), "no contract owner.")
 		});
 		// YOUR CODE HERE
 	});
