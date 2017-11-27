@@ -1,0 +1,456 @@
+{
+  "contractName": "Marketplace",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058204010db571a0b931c3f2084b35be9b7f52c1c0e1fb6562d4b354b2c9d2947cf840029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058204010db571a0b931c3f2084b35be9b7f52c1c0e1fb6562d4b354b2c9d2947cf840029",
+  "sourceMap": "180:243:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "180:243:0:-;;;;;",
+  "source": "pragma solidity ^0.4.15;\n\nimport './Renter.sol';\nimport './Owner.sol';\nimport './Transaction.sol';\nimport './Request.sol';\nimport './Rentpayment.sol';\nimport './Rentdeposit.sol';\n\ncontract Marketplace {\n    Item[] itemlist;\n\tRenter rentstruct;\n\tOwner ownstruct;\n\tTransaction tstruct;\n\tRequest rstruct;\n\tRentpayment rpstruct;\n\tRentdeposit rdstruct;\n\n    struct Item {\n\t\tbytes32 name;\n\t\taddress owner;\n\t\tuint price;\n\t}\n    \n}\n",
+  "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Marketplace.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Marketplace.sol",
+      "exportedSymbols": {
+        "Marketplace": [
+          30
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".15"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 97,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Renter.sol",
+          "file": "./Renter.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "26:22:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 91,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Owner.sol",
+          "file": "./Owner.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "49:21:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 106,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Transaction.sol",
+          "file": "./Transaction.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4,
+        "name": "ImportDirective",
+        "src": "71:27:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 103,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Request.sol",
+          "file": "./Request.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 5,
+        "name": "ImportDirective",
+        "src": "99:23:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 100,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentpayment.sol",
+          "file": "./Rentpayment.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 6,
+        "name": "ImportDirective",
+        "src": "123:27:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 94,
+          "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentdeposit.sol",
+          "file": "./Rentdeposit.sol",
+          "scope": 31,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 7,
+        "name": "ImportDirective",
+        "src": "151:27:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            30
+          ],
+          "name": "Marketplace",
+          "scope": 31
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "itemlist",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct Marketplace.Item storage ref[] storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct Marketplace.Item storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Item",
+                      "referencedDeclaration": 29,
+                      "type": "struct Marketplace.Item storage pointer"
+                    },
+                    "id": 8,
+                    "name": "UserDefinedTypeName",
+                    "src": "207:4:0"
+                  }
+                ],
+                "id": 9,
+                "name": "ArrayTypeName",
+                "src": "207:6:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "207:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rentstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Renter",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Renter",
+                  "referencedDeclaration": 96,
+                  "type": "contract Renter"
+                },
+                "id": 11,
+                "name": "UserDefinedTypeName",
+                "src": "225:6:0"
+              }
+            ],
+            "id": 12,
+            "name": "VariableDeclaration",
+            "src": "225:17:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "ownstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Owner",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Owner",
+                  "referencedDeclaration": 90,
+                  "type": "contract Owner"
+                },
+                "id": 13,
+                "name": "UserDefinedTypeName",
+                "src": "245:5:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "245:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Transaction",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Transaction",
+                  "referencedDeclaration": 105,
+                  "type": "contract Transaction"
+                },
+                "id": 15,
+                "name": "UserDefinedTypeName",
+                "src": "263:11:0"
+              }
+            ],
+            "id": 16,
+            "name": "VariableDeclaration",
+            "src": "263:19:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Request",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Request",
+                  "referencedDeclaration": 102,
+                  "type": "contract Request"
+                },
+                "id": 17,
+                "name": "UserDefinedTypeName",
+                "src": "285:7:0"
+              }
+            ],
+            "id": 18,
+            "name": "VariableDeclaration",
+            "src": "285:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rpstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Rentpayment",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Rentpayment",
+                  "referencedDeclaration": 99,
+                  "type": "contract Rentpayment"
+                },
+                "id": 19,
+                "name": "UserDefinedTypeName",
+                "src": "303:11:0"
+              }
+            ],
+            "id": 20,
+            "name": "VariableDeclaration",
+            "src": "303:20:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "rdstruct",
+              "scope": 30,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract Rentdeposit",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Rentdeposit",
+                  "referencedDeclaration": 93,
+                  "type": "contract Rentdeposit"
+                },
+                "id": 21,
+                "name": "UserDefinedTypeName",
+                "src": "326:11:0"
+              }
+            ],
+            "id": 22,
+            "name": "VariableDeclaration",
+            "src": "326:20:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Marketplace.Item",
+              "name": "Item",
+              "scope": 30,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "name",
+                  "scope": 29,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 23,
+                    "name": "ElementaryTypeName",
+                    "src": "369:7:0"
+                  }
+                ],
+                "id": 24,
+                "name": "VariableDeclaration",
+                "src": "369:12:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner",
+                  "scope": 29,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 25,
+                    "name": "ElementaryTypeName",
+                    "src": "385:7:0"
+                  }
+                ],
+                "id": 26,
+                "name": "VariableDeclaration",
+                "src": "385:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "price",
+                  "scope": 29,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 27,
+                    "name": "ElementaryTypeName",
+                    "src": "402:4:0"
+                  }
+                ],
+                "id": 28,
+                "name": "VariableDeclaration",
+                "src": "402:10:0"
+              }
+            ],
+            "id": 29,
+            "name": "StructDefinition",
+            "src": "353:63:0"
+          }
+        ],
+        "id": 30,
+        "name": "ContractDefinition",
+        "src": "180:243:0"
+      }
+    ],
+    "id": 31,
+    "name": "SourceUnit",
+    "src": "0:424:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-11-27T02:01:46.480Z"
+}

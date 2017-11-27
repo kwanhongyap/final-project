@@ -1,7 +1,7 @@
 'use strict';
 
 /* Add the dependencies you're testing */
-const Crowdsale = artifacts.require("./Crowdsale.sol");
+const Marketplace = artifacts.require("./Marketplace.sol");
 // YOUR CODE HERE
 
 contract('testTemplate', function(accounts) {
