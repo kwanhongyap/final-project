@@ -23,7 +23,7 @@ contract('TestMarketplace', function(accounts) {
             //let items = await marketplace.itemlist.call();
             assert.equal(1,1,"not equal")
             //assert.equal(items.length, 0, "wrong no of items")
-            //await marketplace.upLoad("iclicker", 5, {from: owner2})
+            await marketplace.upLoad("iclicker", 5, {from: owner2})
 		});
 		// YOUR CODE HERE
 	});
