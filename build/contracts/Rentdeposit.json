@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Rentdeposit.sol",
       "exportedSymbols": {
         "Rentdeposit": [
-          89
+          85
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 88,
+        "id": 84,
         "name": "PragmaDirective",
         "src": "0:24:2"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            89
+            85
           ],
           "name": "Rentdeposit",
           "nodes": [
             null
           ],
-          "scope": 90
+          "scope": 86
         },
-        "id": 89,
+        "id": 85,
         "name": "ContractDefinition",
         "src": "26:25:2"
       }
     ],
-    "id": 90,
+    "id": 86,
     "name": "SourceUnit",
     "src": "0:52:2"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:29:05.832Z"
+  "updatedAt": "2017-11-27T03:30:32.743Z"
 }
