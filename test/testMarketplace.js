@@ -22,7 +22,7 @@ contract('TestMarketplace', function(accounts) {
             let tempo = await marketplace.owner2.call();
             assert.equal(owner1, contractowner, "no contract owner.")
             
-            //assert.equal(tempo.valueOf, 0, "not equal")
+            assert.equal(tempo.valueOf, 1, "not equal")
             //await marketplace.upLoad("iclicker", 5, {from: owner2})
             //let items = await marketplace.itemlist.call();
             //assert.equal(items.length, 0, "wrong no of items")
