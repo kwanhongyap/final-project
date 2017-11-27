@@ -27,10 +27,10 @@ contract Marketplace {
 
     function Marketplace() {
         //initial constructor
-        templength = 0;
         owner2 = 1;
         owner = msg.sender;
-        //Item[] memory itemlist = new Item[](1);
+        Item[] memory itemlist = new Item[](0);
+        templength = itemlist.length;
     }
 
     function upLoad(bytes32 name, uint price) {
