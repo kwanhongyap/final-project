@@ -3,8 +3,8 @@
   "abi": [],
   "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058201d3ec819036bcdfa31ae794f9cada22d3e593cc3f9896ddf3e23026589636c2a0029",
   "deployedBytecode": "0x6060604052600080fd00a165627a7a723058201d3ec819036bcdfa31ae794f9cada22d3e593cc3f9896ddf3e23026589636c2a0029",
-  "sourceMap": "26:25:6:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "26:25:6:-;;;;;",
+  "sourceMap": "26:25:5:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:25:5:-;;;;;",
   "source": "pragma solidity ^0.4.15;\n\ncontract Request {\n    \n}\n",
   "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Request.sol",
   "ast": {
@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Request.sol",
       "exportedSymbols": {
         "Request": [
-          170
+          177
         ]
       }
     },
@@ -26,9 +26,9 @@
             ".15"
           ]
         },
-        "id": 169,
+        "id": 176,
         "name": "PragmaDirective",
-        "src": "0:24:6"
+        "src": "0:24:5"
       },
       {
         "attributes": {
@@ -42,22 +42,22 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            170
+            177
           ],
           "name": "Request",
           "nodes": [
             null
           ],
-          "scope": 171
+          "scope": 178
         },
-        "id": 170,
+        "id": 177,
         "name": "ContractDefinition",
-        "src": "26:25:6"
+        "src": "26:25:5"
       }
     ],
-    "id": 171,
+    "id": 178,
     "name": "SourceUnit",
-    "src": "0:52:6"
+    "src": "0:52:5"
   },
   "compiler": {
     "name": "solc",
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T05:29:54.329Z"
+  "updatedAt": "2017-11-27T07:38:28.564Z"
 }

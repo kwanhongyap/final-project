@@ -25,17 +25,22 @@ contract('TestMarketplace', function(accounts) {
             assert.equal(tempo, 0, "not equal")
             await marketplace.upLoad("iclicker", 5, {from: owner2});
             let items = await marketplace.templength.call();
-            assert.equal(items, 1, "wrong no of items");
+            assert.equal(items.valueOf(), 1, "wrong no of items");
             await marketplace.upLoad("iclicker2", 5, {from: owner2});
             let items2 = await marketplace.templength.call();
-            assert.equal(items2, 2, "wrong no of items");
-            let itemlisting = await marketplace.lookingUp({from: owner2});
-            assert.equal(itemlisting[0], 1, "wrong item");
-		});
+            assert.equal(items2.valueOf(), 2, "wrong no of items");
+            let itemlisting = await marketplace.lookingUp.call({from: owner2});
+            assert.equal(itemlisting.valueOf()[2], 5, "wrong item");
+        });
 		// YOUR CODE HERE
 	});
 
-	describe('Your string here', function() {
-		// YOUR CODE HERE
+	describe('Look up Item', function() {
+        // YOUR CODE HERE
+        it("Init+Upload", async function() {
+            //let itemlisting = await marketplace.lookingUp.call();
+            //assert.equal(itemlisting.valueOf(), 5, "wrong item");
+        });
+        
 	});
 });
