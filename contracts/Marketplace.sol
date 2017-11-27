@@ -9,7 +9,7 @@ import './Rentdeposit.sol';
 
 contract Marketplace {
     address public owner;
-    Item[] itemlist;
+    Item[] public itemlist;
 	Renter rentstruct;
 	Owner ownstruct;
 	Transaction tstruct;
