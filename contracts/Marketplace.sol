@@ -31,6 +31,10 @@ contract Marketplace {
         //Item[] memory itemlist = new Item[](1);
     }
 
+    function templength() returns (uint templength) {
+        return templength;
+    }
+
     function upLoad(bytes32 name, uint price) {
         //owner upload items to marketplace contract
         address owner = msg.sender;
