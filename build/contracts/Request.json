@@ -12,7 +12,7 @@
       "absolutePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Request.sol",
       "exportedSymbols": {
         "Request": [
-          99
+          114
         ]
       }
     },
@@ -26,7 +26,7 @@
             ".15"
           ]
         },
-        "id": 98,
+        "id": 113,
         "name": "PragmaDirective",
         "src": "0:24:5"
       },
@@ -42,20 +42,20 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            99
+            114
           ],
           "name": "Request",
           "nodes": [
             null
           ],
-          "scope": 100
+          "scope": 115
         },
-        "id": 99,
+        "id": 114,
         "name": "ContractDefinition",
         "src": "26:25:5"
       }
     ],
-    "id": 100,
+    "id": 115,
     "name": "SourceUnit",
     "src": "0:52:5"
   },
@@ -65,5 +65,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:08:01.290Z"
+  "updatedAt": "2017-11-27T03:13:26.403Z"
 }
