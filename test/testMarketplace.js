@@ -19,7 +19,7 @@ contract('TestMarketplace', function(accounts) {
 	describe('Initialization and Upload', function() {
 		it("Init+Upload", async function() {
             let contractowner = await marketplace.owner.call();
-            //let tempo = await marketplace.templength;
+            let tempo = await marketplace.templength.call();
             assert.equal(owner1, contractowner, "no contract owner.")
             
             //assert.equal(tempo.valueOf, 0, "not equal")
