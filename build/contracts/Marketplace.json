@@ -122,11 +122,11 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600060018190555061046c806100666000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4091af146100725780635fdde5c2146100a2578063673402e5146101075780638da5cb5b14610130578063a3554eba14610185575b600080fd5b341561007d57600080fd5b6100a06004808035600019169060200190919080359060200190919050506101fe565b005b34156100ad57600080fd5b6100b56102d7565b60405180806020018281038252838181518152602001915080516000925b818410156100f657828490602001906020020151815260200192600101926100d3565b925050509250505060405180910390f35b341561011257600080fd5b61011a6102e5565b6040518082815260200191505060405180910390f35b341561013b57600080fd5b6101436102eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561019057600080fd5b6101a66004808035906020019091905050610310565b6040518084600019166000191681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b6000610208610369565b339150606060405190810160405280856000191681526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018481525090506002805480600101828161025791906103a4565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040820151816002015550505050505050565b6102df6103d6565b80905090565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60028181548110151561031f57fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60606040519081016040528060008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116103d1576003028160030283600052602060002091820191016103d091906103ea565b5b505050565b602060405190810160405280600081525090565b61043d91905b80821115610439576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160009055506003016103f0565b5090565b905600a165627a7a72305820736256f198f3d91b026550164351b6278aa52cff238a15c71c9233090554db0b0029",
-  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4091af146100725780635fdde5c2146100a2578063673402e5146101075780638da5cb5b14610130578063a3554eba14610185575b600080fd5b341561007d57600080fd5b6100a06004808035600019169060200190919080359060200190919050506101fe565b005b34156100ad57600080fd5b6100b56102d7565b60405180806020018281038252838181518152602001915080516000925b818410156100f657828490602001906020020151815260200192600101926100d3565b925050509250505060405180910390f35b341561011257600080fd5b61011a6102e5565b6040518082815260200191505060405180910390f35b341561013b57600080fd5b6101436102eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561019057600080fd5b6101a66004808035906020019091905050610310565b6040518084600019166000191681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b6000610208610369565b339150606060405190810160405280856000191681526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018481525090506002805480600101828161025791906103a4565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040820151816002015550505050505050565b6102df6103d6565b80905090565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60028181548110151561031f57fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60606040519081016040528060008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116103d1576003028160030283600052602060002091820191016103d091906103ea565b5b505050565b602060405190810160405280600081525090565b61043d91905b80821115610439576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160009055506003016103f0565b5090565b905600a165627a7a72305820736256f198f3d91b026550164351b6278aa52cff238a15c71c9233090554db0b0029",
-  "sourceMap": "180:872:0:-;;;477:156;;;;;;;;548:10;540:5;;:18;;;;;;;;;;;;;;;;;;625:1;618:4;:8;;;;180:872;;;;;;",
+  "bytecode": "0x6060604052341561000f57600080fd5b6000600181905550336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061046c806100666000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4091af146100725780635fdde5c2146100a2578063673402e5146101075780638da5cb5b14610130578063a3554eba14610185575b600080fd5b341561007d57600080fd5b6100a06004808035600019169060200190919080359060200190919050506101fe565b005b34156100ad57600080fd5b6100b56102d7565b60405180806020018281038252838181518152602001915080516000925b818410156100f657828490602001906020020151815260200192600101926100d3565b925050509250505060405180910390f35b341561011257600080fd5b61011a6102e5565b6040518082815260200191505060405180910390f35b341561013b57600080fd5b6101436102eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561019057600080fd5b6101a66004808035906020019091905050610310565b6040518084600019166000191681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b6000610208610369565b339150606060405190810160405280856000191681526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018481525090506002805480600101828161025791906103a4565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040820151816002015550505050505050565b6102df6103d6565b80905090565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60028181548110151561031f57fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60606040519081016040528060008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116103d1576003028160030283600052602060002091820191016103d091906103ea565b5b505050565b602060405190810160405280600081525090565b61043d91905b80821115610439576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160009055506003016103f0565b5090565b905600a165627a7a72305820e2487fb84dd3c82a8d54b54dd4e1d4301018477e4b43d6156e1cf1ed5d49baa90029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635d4091af146100725780635fdde5c2146100a2578063673402e5146101075780638da5cb5b14610130578063a3554eba14610185575b600080fd5b341561007d57600080fd5b6100a06004808035600019169060200190919080359060200190919050506101fe565b005b34156100ad57600080fd5b6100b56102d7565b60405180806020018281038252838181518152602001915080516000925b818410156100f657828490602001906020020151815260200192600101926100d3565b925050509250505060405180910390f35b341561011257600080fd5b61011a6102e5565b6040518082815260200191505060405180910390f35b341561013b57600080fd5b6101436102eb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561019057600080fd5b6101a66004808035906020019091905050610310565b6040518084600019166000191681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390f35b6000610208610369565b339150606060405190810160405280856000191681526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018481525090506002805480600101828161025791906103a4565b916000526020600020906003020160008390919091506000820151816000019060001916905560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040820151816002015550505050505050565b6102df6103d6565b80905090565b60015481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60028181548110151561031f57fe5b90600052602060002090600302016000915090508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020154905083565b60606040519081016040528060008019168152602001600073ffffffffffffffffffffffffffffffffffffffff168152602001600081525090565b8154818355818115116103d1576003028160030283600052602060002091820191016103d091906103ea565b5b505050565b602060405190810160405280600081525090565b61043d91905b80821115610439576000808201600090556001820160006101000a81549073ffffffffffffffffffffffffffffffffffffffff02191690556002820160009055506003016103f0565b5090565b905600a165627a7a72305820e2487fb84dd3c82a8d54b54dd4e1d4301018477e4b43d6156e1cf1ed5d49baa90029",
+  "sourceMap": "180:872:0:-;;;477:156;;;;;;;;547:1;540:4;:8;;;;566:10;558:5;;:18;;;;;;;;;;;;;;;;;;180:872;;;;;;",
   "deployedSourceMap": "180:872:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;639:256;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;901:144;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;233:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;207:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;255:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;639:256;744:13;814:17;;:::i;:::-;760:10;744:26;;834:24;;;;;;;;;839:4;834:24;;;;;;;845:5;834:24;;;;;;852:5;834:24;;;814:44;;868:8;:20;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;882:5;868:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;639:256;;;;:::o;901:144::-;931:15;;:::i;:::-;1030:8;1023:15;;901:144;:::o;233:16::-;;;;:::o;207:20::-;;;;;;;;;;;;;:::o;255:22::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;180:872::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.15;\n\nimport './Renter.sol';\nimport './Owner.sol';\nimport './Transaction.sol';\nimport './Request.sol';\nimport './Rentpayment.sol';\nimport './Rentdeposit.sol';\n\ncontract Marketplace {\n    address public owner;\n    uint public temp;\n    Item[] public itemlist;\n\tRenter rentstruct;\n\tOwner ownstruct;\n\tTransaction tstruct;\n\tRequest rstruct;\n\tRentpayment rpstruct;\n\tRentdeposit rdstruct;\n\n    struct Item {\n\t\tbytes32 name;\n\t\taddress owner;\n\t\tuint price;\n\t}\n\n    function Marketplace() {\n        //initial constructor\n        owner = msg.sender;\n        //Item[] memory itemlist = new Item[](1);\n        temp = 0;\n    }\n\n    function upLoad(bytes32 name, uint price) {\n        //owner upload items to marketplace contract\n        address owner = msg.sender;\n        //temp = itemlist.length;\n        Item memory uitem = Item(name, owner, price);\n        itemlist.push(uitem);\n    }\n\n    function lookingUp() returns (Item[] itemlist) {\n        //potential renter can lookup what is on the marketplace\n        return itemlist;\n    }\n    \n}\n",
+  "source": "pragma solidity ^0.4.15;\n\nimport './Renter.sol';\nimport './Owner.sol';\nimport './Transaction.sol';\nimport './Request.sol';\nimport './Rentpayment.sol';\nimport './Rentdeposit.sol';\n\ncontract Marketplace {\n    address public owner;\n    uint public temp;\n    Item[] public itemlist;\n\tRenter rentstruct;\n\tOwner ownstruct;\n\tTransaction tstruct;\n\tRequest rstruct;\n\tRentpayment rpstruct;\n\tRentdeposit rdstruct;\n\n    struct Item {\n\t\tbytes32 name;\n\t\taddress owner;\n\t\tuint price;\n\t}\n\n    function Marketplace() {\n        //initial constructor\n        temp = 0;\n        owner = msg.sender;\n        //Item[] memory itemlist = new Item[](1);\n    }\n\n    function upLoad(bytes32 name, uint price) {\n        //owner upload items to marketplace contract\n        address owner = msg.sender;\n        //temp = itemlist.length;\n        Item memory uitem = Item(name, owner, price);\n        itemlist.push(uitem);\n    }\n\n    function lookingUp() returns (Item[] itemlist) {\n        //potential renter can lookup what is on the marketplace\n        return itemlist;\n    }\n    \n}\n",
   "sourcePath": "/Users/kwanhongyap/Desktop/Crypto_final/contracts/Marketplace.sol",
   "ast": {
     "attributes": {
@@ -1097,7 +1097,7 @@
                           "scope": 67,
                           "stateVariable": false,
                           "storageLocation": "default",
-                          "type": "address",
+                          "type": "uint256",
                           "value": null,
                           "visibility": "internal",
                           "argumentTypes": null,
@@ -1111,28 +1111,32 @@
                           {
                             "attributes": {
                               "name": "address",
-                              "type": "address",
+                              "type": "uint256",
                               "argumentTypes": null,
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 9,
-                              "value": "owner"
+                              "referencedDeclaration": 11,
+                              "value": "temp"
                             },
                             "id": 36,
                             "name": "Identifier",
-                            "src": "540:5:0"
+                            "src": "540:4:0"
                           },
                           {
                             "attributes": {
                               "argumentTypes": null,
                               "isConstant": false,
                               "isLValue": false,
-                              "isPure": false,
+                              "isPure": true,
                               "lValueRequested": false,
                               "member_name": "sender",
                               "referencedDeclaration": null,
-                              "type": "address"
+                              "type": "int_const 0",
+                              "hexvalue": "30",
+                              "subdenomination": null,
+                              "token": "number",
+                              "value": "0"
                             },
                             "children": [
                               {
@@ -1150,14 +1154,14 @@
                                 "src": "548:3:0"
                               }
                             ],
-                            "id": 38,
-                            "name": "MemberAccess",
-                            "src": "548:10:0"
+                            "id": 37,
+                            "name": "Literal",
+                            "src": "547:1:0"
                           }
                         ],
-                        "id": 39,
+                        "id": 38,
                         "name": "Assignment",
-                        "src": "540:18:0"
+                        "src": "540:8:0"
                       },
                       {
                         "attributes": {
@@ -1191,9 +1195,9 @@
                         "src": "764:10:0"
                       }
                     ],
-                    "id": 40,
+                    "id": 39,
                     "name": "ExpressionStatement",
-                    "src": "540:18:0"
+                    "src": "540:8:0"
                   },
                   {
                     "attributes": {
@@ -1209,7 +1213,7 @@
                           "scope": 67,
                           "stateVariable": false,
                           "storageLocation": "memory",
-                          "type": "uint256",
+                          "type": "address",
                           "value": null,
                           "visibility": "internal",
                           "argumentTypes": null,
@@ -1224,18 +1228,18 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Item",
-                              "referencedDeclaration": 11,
-                              "type": "uint256",
+                              "referencedDeclaration": 9,
+                              "type": "address",
                               "length": null,
                               "argumentTypes": null,
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "value": "temp"
+                              "value": "owner"
                             },
-                            "id": 41,
+                            "id": 40,
                             "name": "Identifier",
-                            "src": "618:4:0",
+                            "src": "558:5:0",
                             "children": [
                               {
                                 "attributes": {
@@ -1256,21 +1260,39 @@
                               "hexvalue": "30",
                               "isConstant": false,
                               "isLValue": false,
-                              "isPure": true,
+                              "isPure": false,
                               "lValueRequested": false,
                               "subdenomination": null,
                               "token": "number",
-                              "type": "int_const 0",
-                              "value": "0"
+                              "type": "address",
+                              "value": "0",
+                              "member_name": "sender",
+                              "referencedDeclaration": null
                             },
                             "id": 42,
-                            "name": "Literal",
-                            "src": "625:1:0"
+                            "name": "MemberAccess",
+                            "src": "566:10:0",
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 113,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 41,
+                                "name": "Identifier",
+                                "src": "566:3:0"
+                              }
+                            ]
                           }
                         ],
                         "id": 43,
                         "name": "Assignment",
-                        "src": "618:8:0"
+                        "src": "558:18:0"
                       },
                       {
                         "attributes": {
@@ -1399,7 +1421,7 @@
                     ],
                     "id": 44,
                     "name": "ExpressionStatement",
-                    "src": "618:8:0"
+                    "src": "558:18:0"
                   },
                   {
                     "children": [
@@ -2288,5 +2310,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-11-27T03:26:40.559Z"
+  "updatedAt": "2017-11-27T03:29:05.832Z"
 }
