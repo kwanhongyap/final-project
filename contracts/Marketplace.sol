@@ -9,7 +9,7 @@ import './Rentdeposit.sol';
 
 contract Marketplace {
     address public owner;
-    //uint public temp;
+    uint public temp;
     Item[] public itemlist;
 	Renter rentstruct;
 	Owner ownstruct;
@@ -28,7 +28,7 @@ contract Marketplace {
         //initial constructor
         owner = msg.sender;
         //Item[] memory itemlist = new Item[](1);
-        //temp = 0;
+        temp = 0;
     }
 
     function upLoad(bytes32 name, uint price) {
