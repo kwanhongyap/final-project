@@ -7,7 +7,7 @@ contract Owner {
     mapping(address => Item[]) public  requests;
     mapping(address => Orequest[]) public  requests2;
     mapping(address => Transact[]) public transacts;
-    mapping(address => Odeposit[]) public odeposit;
+    mapping(address => Deposit[]) public deposits;
 
     struct Transact {
         address renter;
@@ -18,7 +18,7 @@ contract Owner {
         uint ofee;
     }
 
-    struct Odeposit {
+    struct Deposit {
         address renter;
         string name;
         address owner;
@@ -101,12 +101,12 @@ contract Owner {
         return retval.price;
     }
 
-    function rentdeposit(address renter, string name, address owner, uint price, uint rfee) public {
-        odeposit[owner].push(Odeposit(renter, name, owner, price, rfee));
+    function depositing(address renter, string name, address owner, uint price, uint rfee) public {
+        deposits[owner].push(Deposit(renter, name, owner, price, rfee));
     }
 
     function rentfee(address owner, uint index) public returns (uint) {
-        Odeposit retval = odeposit[owner][index];
+        Deposit retval = deposits[owner][index];
         return retval.rfee;
     }
 

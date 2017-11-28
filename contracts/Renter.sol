@@ -7,9 +7,9 @@ contract Renter {
     mapping(address => Item[]) public  requests;
     mapping(address => Rrequest[]) public  requests2;
     mapping(address => Transact[]) public transacts;
-    mapping(address => Rdeposit[]) public rdeposit;
+    mapping(address => Deposit[]) public deposits;
 
-    struct Rdeposit {
+    struct Deposit {
         address renter;
         string name;
         address owner;
@@ -100,12 +100,12 @@ contract Renter {
         return retval.price;
     }
 
-    function rentdeposit(address renter, string name, address owner, uint price, uint rfee) public {
-        rdeposit[renter].push(Rdeposit(renter, name, owner, price, rfee));
+    function depositing(address renter, string name, address owner, uint price, uint rfee) public {
+        deposits[renter].push(Deposit(renter, name, owner, price, rfee));
     }
 
     function rentfee(address renter, uint index) public returns (uint) {
-        Rdeposit retval = rdeposit[renter][index];
+        Deposit retval = deposits[renter][index];
         return retval.rfee;
     }
 }

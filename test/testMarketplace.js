@@ -55,7 +55,8 @@ contract('TestMarketplace', function(accounts) {
             let attribute5 = await marketplace.transactprice2.call(0, {from: owner2});
             assert.equal(attribute5.valueOf(), 5, "wrong item");
 
-            //await marketplace.depositrent.call(owner2, "iclicker", owner1, 5, 5, {from: owner2});
+            await marketplace.depositrent.call(owner2, "iclicker", owner1, 5, 5, {from: owner2});
+            //await marketplace.depositrent2.call(owner2, "iclicker", owner1, 5, 5, {from: owner2});
             //let attribute6 = await marketplace.rentfee.call(0, {from: owner2});
             //assert.equal(attribute6.valueOf(), 5, "wrong item");
 
@@ -63,14 +64,5 @@ contract('TestMarketplace', function(accounts) {
             //assert.equal(attribute7.valueOf(), 5, "wrong item");
         });
 		// YOUR CODE HERE
-	});
-
-	describe('Look up Item', function() {
-        // YOUR CODE HERE
-        it("Init+Upload", async function() {
-            //let itemlisting = await marketplace.lookingUp.call();
-            //assert.equal(itemlisting.valueOf(), 5, "wrong item");
-        });
-        
 	});
 });

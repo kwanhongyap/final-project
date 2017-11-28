@@ -140,10 +140,17 @@ contract Marketplace {
         return tprice;
     }
 
- /*  function depositrent(address renter, string name, address owner, uint price, uint rfee) public {
+   function depositrent(address renter, string name, address owner, uint price, uint rfee) public {
         address drenter = msg.sender;
-        rentstruct.rentdeposit(renter, name, owner, price, rfee);
-        ownstruct.rentdeposit(renter, name, owner, price, rfee);
+        rentstruct.depositing(renter, name, owner, price, rfee);
+        //ownstruct.depositing(renter, name, owner, price, rfee);
+        return;
+    }
+
+ /*   function depositrent2(address renter, string name, address owner, uint price, uint rfee) public {
+        address drenter = msg.sender;
+        //rentstruct.rRentdeposit(renter, name, owner, price, rfee);
+        ownstruct.oRentdeposit(renter, name, owner, price, rfee);
         return;
     }*/
 
