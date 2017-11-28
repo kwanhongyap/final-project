@@ -21,20 +21,36 @@ contract Marketplace {
 	Rentdeposit rdstruct;
 
     struct Item {
-		bytes32 name;
+		string name;
 		address owner;
 		uint price;
 	}
+
+    struct Rrequest {
+        string name;
+        address owner;
+        uint price;
+        uint fee;
+    }
 
     function Marketplace() {
         //initial constructor
         
         rentstruct = new Renter();
+        ownstruct = new Owner();
         owner = msg.sender;
         templength = 0;
     }
 
-    function upLoad(bytes32 name, uint price) {
+    function owner() public returns (address) {
+        return owner;
+    }
+
+    function templength() public returns (uint) {
+        return templength;
+    }
+
+    function upLoad(string name, uint price) {
         //owner upload items to marketplace contract
         address itemowner = msg.sender;
         for (uint index = 0; index < tempitemlist.length; index++) {
@@ -52,7 +68,7 @@ contract Marketplace {
 
     
 
-    function lookingUp() returns (bytes32, address, uint) {
+    function lookingUp() returns (string, address, uint) {
         //potential renter can lookup what is on the 
         address potentialrenter = msg.sender;
         Item retval = itemlist[0];
@@ -60,10 +76,87 @@ contract Marketplace {
 
     }
 
-    function request(bytes32 name, address owner, uint price) {
+    function request(string name, address owner, uint price) {
         address renter = msg.sender;
         rentstruct.requesting(renter, name, owner, price);
 
-    } 
+    }
+
+    function request2(string name, address renter, uint price, uint fee) {
+        address owner = msg.sender;
+        ownstruct.requesting2(renter, name, owner, price, fee);
+
+    }
+
+    function request3(string name, address owner, uint price, uint fee) {
+        address renter = msg.sender;
+        rentstruct.requesting2(renter, name, owner, price, fee);
+
+    }
     
+    function requestcheck(uint index) public returns ( address, uint) {
+        address renter = msg.sender;
+        //string tname = rentstruct.namerequest(renter, index);
+        address towner = rentstruct.addressrequest(renter, index);
+        uint tprice = rentstruct.pricerequest(renter, index);
+        return ( towner, tprice);
+    }
+
+    function requestcheck2(uint index) public returns ( address, uint) {
+        address owner = msg.sender;
+        //string tname = rentstruct.namerequest(renter, index);
+        address towner = ownstruct.addressrequest2(owner, index);
+        uint tprice = ownstruct.pricerequest2(owner, index);
+        return ( towner, tprice);
+    }
+
+    function requestcheck3(uint index) public returns ( address, uint) {
+        address renter = msg.sender;
+        //string tname = rentstruct.namerequest(renter, index);
+        address towner = rentstruct.addressrequest2(renter, index);
+        uint tprice = rentstruct.pricerequest2(renter, index);
+        return ( towner, tprice);
+    }
+
+    function transact(string name, address renter, uint price, uint rfee, uint ofee, address owner) {
+        address towner = msg.sender;
+        rentstruct.transacting(renter, name, owner, price, rfee, ofee);
+        ownstruct.transacting(renter, name, owner, price, rfee, ofee);
+    }
+
+    function transactprice(uint index) public returns (uint) {
+        address renter = msg.sender;
+        //string tname = rentstruct.namerequest(renter, index);
+        //address towner = rentstruct.pricetransact(renter, index);
+        uint tprice = rentstruct.pricetransact(renter, index);
+        return tprice;
+    }
+
+    function transactprice2(uint index) public returns (uint) {
+        address owner = msg.sender;
+        //string tname = rentstruct.namerequest(renter, index);
+        //address towner = rentstruct.pricetransact(renter, index);
+        uint tprice = ownstruct.pricetransact(owner, index);
+        return tprice;
+    }
+
+ /*  function depositrent(address renter, string name, address owner, uint price, uint rfee) public {
+        address drenter = msg.sender;
+        rentstruct.rentdeposit(renter, name, owner, price, rfee);
+        ownstruct.rentdeposit(renter, name, owner, price, rfee);
+        return;
+    }*/
+
+/*    function rentfee(uint index) public returns (uint) {
+        address renter = msg.sender;
+        uint rfee = rentstruct.rentfee(renter, index);
+        return rfee;
+    }*/
+/*
+    function rentfee2(uint index) public returns (uint) {
+        address owner = msg.sender;
+        uint rfee = ownstruct.rentfee(owner, index);
+        return rfee;
+    }*/
+
 }
