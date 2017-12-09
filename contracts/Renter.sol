@@ -1,111 +1,139 @@
 pragma solidity ^0.4.15;
 
+//import './Market.sol';
+
 contract Renter {
-    Item item;
-    uint public lengthtemp;
-    uint public templength;
-    mapping(address => Item[]) public  requests;
-    mapping(address => Rrequest[]) public  requests2;
-    mapping(address => Transact[]) public transacts;
-    mapping(address => Deposit[]) public deposits;
-
-    struct Deposit {
-        address renter;
-        string name;
-        address owner;
-        uint price;
-        uint rfee;
-    }
-
-    struct Transact {
-        address renter;
-        string name;
-        address owner;
-        uint price;
-        uint rfee;
-        uint ofee;
-    }
-
-    struct Item {
-		string name;
-		address owner;
-		uint price;
-	}
-
-    struct Rrequest {
-        string name;
-        address owner;
-        uint price;
-        uint fee;
-    }
+    mapping(address => uint[]) public items;
+    mapping(address => uint[]) public prices;
+    mapping(address => uint[]) public rentprices;
+    mapping(address => address[]) public owners;
+    mapping(address => uint[]) public commitfees;
+    mapping(address => uint[]) public rentdurations;
+    mapping(address => uint[]) public nows;
+    mapping(address => uint[]) public statuss;
+    mapping(address => bytes32[]) public rhashings;
+    mapping(address => bytes32[]) public ohashings;
+    mapping(address => bool[]) public available;
 
     function Renter() public {
-        templength = 0;
-        lengthtemp = 0;
+    }
+    function request(address renter, uint item, uint price, address owner, uint commitfee) public {
+        items[renter].push(item);
+        prices[renter].push(price);
+        owners[renter].push(owner);
+        commitfees[renter].push(commitfee);
+        nows[renter].push(now);
+        statuss[renter].push(1);
+        rhashings[renter].push(0);
+        ohashings[renter].push(0);
+        available[renter].push(true);
     }
 
-    function requesting(address renter, string name, address owner, uint price) public {
-        requests[renter].push(Item(name, owner, price));
-        templength = requests[renter].length;
+    function indexCheck(address renter, uint index) returns (bool) {
+        if (index >= available[renter].length) {
+            return false;
+        } else {
+            if (available[renter][index]) {
+                return true;
+            }
+            return false;
+        }
     }
 
-    function requesting2(address renter, string name, address owner, uint price, uint fee) public {
-        requests2[renter].push(Rrequest(name, owner, price, fee));
-        //templength = requests2[renter].length;
+    function itemsCheck(address renter, uint index) returns (uint) {
+        return items[renter][index];
     }
 
-    function namerequest(address renter, uint index) public returns (string) {
-        Item retval = requests[renter][index];
-        lengthtemp = 1;
-        return retval.name;
+    function indexBool(address renter, uint item) returns (bool) {
+        uint limit = items[renter].length;
+        for (uint i = 0; i < limit; i++) {
+            if (items[renter][i] == item) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    function namerequest2(address renter, uint index) public returns (string) {
-        Rrequest retval = requests2[renter][index];
-        lengthtemp = 1;
-        return retval.name;
+
+    function indexFinding(address renter, uint item) returns (uint) {
+        uint limit = items[renter].length;
+        for (uint i = 0; i < limit; i++) {
+            if (items[renter][i] == item) {
+                return i;
+            }
+        }
+        return 0;
     }
 
-    function addressrequest(address renter, uint index) public returns (address) {
-        Item retval = requests[renter][index];
-        lengthtemp = 1;
-        return retval.owner;
+    function pricesCheck(address renter, uint index) returns (uint) {
+        return prices[renter][index];
     }
 
-    function addressrequest2(address renter, uint index) public returns (address) {
-        Rrequest retval = requests2[renter][index];
-        lengthtemp = 1;
-        return retval.owner;
+    function rentpricesCheck(address renter, uint index) returns (uint) {
+        return rentprices[renter][index];
     }
 
-    function pricerequest(address renter, uint index) public returns (uint) {
-        Item retval = requests[renter][index];
-        lengthtemp = 1;
-        return retval.price;
+    function ownersCheck(address renter, uint index) returns (address) {
+        return owners[renter][index];
     }
 
-    function pricerequest2(address renter, uint index) public returns (uint) {
-        Rrequest retval = requests2[renter][index];
-        lengthtemp = 1;
-        return retval.price;
+    function commitfeesCheck(address renter, uint index) returns (uint) {
+        return commitfees[renter][index];
     }
 
-    function transacting(address renter, string name, address owner, uint price, uint rfee, uint ofee) public {
-        transacts[renter].push(Transact(renter, name, owner, price, rfee, ofee));    
+    
+
+    function rentdurationsCheck(address renter, uint index) returns (uint) {
+        return rentdurations[renter][index];
     }
 
-    function pricetransact(address renter, uint index) public returns (uint) {
-        Transact retval = transacts[renter][index];
-        lengthtemp = 1;
-        return retval.price;
+    function nowsCheck(address renter, uint index) returns (uint) {
+        return nows[renter][index];
     }
 
-    function depositing(address renter, string name, address owner, uint price, uint rfee) public {
-        deposits[renter].push(Deposit(renter, name, owner, price, rfee));
+    
+
+    function statussCheck(address renter, uint index) returns (uint) {
+        return statuss[renter][index];
     }
 
-    function rentfee(address renter, uint index) public returns (uint) {
-        Deposit retval = deposits[renter][index];
-        return retval.rfee;
+    function rhashingsCheck(address renter, uint index) returns (bytes32) {
+        return rhashings[renter][index];
     }
+
+    function ohashingsCheck(address renter, uint index) returns (bytes32) {
+        return ohashings[renter][index];
+    }
+
+    function statussSet(address renter, uint index, uint status) {
+        statuss[renter][index] = status;
+    }
+
+    function statussSet3(address renter, uint index) {
+        statuss[renter][index] = 3;
+    }
+
+    function statussSet4(address renter, uint index) {
+        statuss[renter][index] = 3;
+    }
+
+    function statussSet0(address renter, uint index) {
+        statuss[renter][index] = 0;
+    }
+
+    function previousSet(address renter, uint index, uint time) {
+        nows[renter][index] = time;
+    } 
+
+    function availableSet(address renter, uint index, bool val) {
+        available[renter][index] = val;
+    }
+
+    function acknowledge(address renter, uint index, bytes32 ohash, bytes32 ohash2) {
+        nows[renter][index] = now;
+        statuss[renter][index] = 2;
+        ohashings[renter][index] = ohash;
+        rhashings[renter][index] = ohash2;
+    }
+    
 }
